@@ -57,13 +57,55 @@
 #     print('Привет,', username )
 
 
-n = 423
-summa = 0
-while n > 0:
-    x = n%10
-    summa = summa+x
-    n = n // 10
-print(summa)
+# n = 423
+# summa = 0
+# while n > 0:
+#     x = n%10
+#     summa = summa+x
+#     n = n // 10
+# print(summa)
+
+# # min делитель числа 
+# n = int(input("введите число: "))
+# flag = True
+# i = 2
+# while flag : #flag == True
+#     if n % i == 0:
+#         flag = False
+#         print(i)
+#     elif i > n // 2:
+#         flag = False
+#         print(n)
+#     i += 1
 
 
+# for i in range (100, 0, -20):
+#     print(i)
 
+# a = 'qwerty'
+# for i in a:
+#     print(i)
+
+# line = ""
+# for i in range(5):
+#     line = ""
+#     for j in range(5):
+#         line += "*"
+#     print(line)
+
+
+# text = 'СъЕШЬ ещё этих МяГкИх булок'
+# print(len(text))
+# print('ещё' in text)
+# print(text.lower())
+# print(text.upper())
+# print(text.replace('ещё', 'ЕЩЁ'))
+
+
+# a = int(input("Введите число: "))
+# print((a // 100) + (a // 10 % 10) + (a % 10))
+
+s = 60
+k = s// 3 *2
+p = k//4
+print(f"{p} {k} {p}")
