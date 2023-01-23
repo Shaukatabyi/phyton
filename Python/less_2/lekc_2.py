@@ -14,3 +14,17 @@
 t = ()
 print(type(t))
 
+t = (1,)
+print(type(t))
+
+v = [1,2,5,]
+
+v = tuple(v)
+
+
+a,b = 1, 2
+a=b=1
+
+a,b,c = v
+print(a,b,c)
+print(type(v))
