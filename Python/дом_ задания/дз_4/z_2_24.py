@@ -8,19 +8,33 @@
 5 -> 9 1 1 4 9
 22'''
 
+# n = int(input("кол-во кустов в грядке: "))
+# list1 = []
+# for i in range(n):
+#     list1.append(int(input("кол-во ягод в кусте: ")))
+# print(list1)
+# max1 = list1[-1] + list1[0] + list1[1]
+
+# for j in range(len(list1)-1):
+#     max2 = list1[j-1] + list1[j] + list1[j+1]
+#     if max2 >max1:
+#         max1 = max2
+#     max3 = (list1[-2] + list1[-1] + list1[0])
+#     if (max3)> max1:
+#         max1=(max3)
+# print(max1)
+
+# или
+
 n = int(input("кол-во кустов в грядке: "))
-list1 = []
+B = [int(input("кол-во ягод в кусте: ")) for i in range(n)]
+print(B)
+
+sum = 0
+
+B = B+B[:2]
+print(B)
+
 for i in range(n):
-    list1.append(int(input("кол-во ягод в кусте: ")))
-print(list1)
-max1 = list1[-1] + list1[0] + list1[1]
-
-for j in range(len(list1)-1):
-    max2 = list1[j-1] + list1[j] + list1[j+1]
-    if max2 >max1:
-        max1 = max2
-    max3 = (list1[-2] + list1[-1] + list1[0])
-    if (max3)> max1:
-        max1=(max3)
-print(max1)
-
+    sum = max(sum, B[i] + B[i+1] + B[i+2])
+print(sum)
